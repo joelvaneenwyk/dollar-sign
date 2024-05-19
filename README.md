@@ -1,5 +1,7 @@
-Dollar Sign
-=============================
+# Dollar Sign
+
+> [!warning]
+> This is a fork.
 
 For when you accidentally copy the dollar sign and your shell returns "$: command not found".
 
@@ -7,14 +9,14 @@ For when you accidentally copy the dollar sign and your shell returns "$: comman
 
 Add the executable to your path and give it permissions.
 
-```
+```bash
 sudo printf '#!/bin/sh\nexec "$@"\n' > /usr/local/bin/$
 sudo chmod +x /usr/local/bin/$
 ```
 
 Or to install using [`npm`](https://www.npmjs.com/):
 
-```
+```bash
 npm -g install @fraction/dollar-sign
 ```
 
